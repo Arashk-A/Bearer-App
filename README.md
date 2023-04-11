@@ -101,6 +101,17 @@ For more information, checkout official documentation of CocoaPods (https://guid
 
 - From Firebase console download the `GoogleService-Info.plist`. In Xcode, drag and drop the `GoogleService-Info.plist` file into your project. Make sure to select the option to copy the file to your project if it's not already in your project directory.
 
+Unlike Google Maps, which is integrated using CocoaPods, Firebase is integrated using Swift Package Manager. To install Firebase with Swift Package Manager in Xcode 12 and above, navigate to File > Swift Packages > Add Package Dependency and in the prompt that appears, select the Firebase GitHub repository. Make sure to select the following packages:
+
+- FirebaseFirestore
+- FirebaseFunctions
+- FirebaseFirestoreSwift
+- FirebaseStorage
+
+Once the packages have been selected, Xcode will handle the installation process. It may take some time to install, depending on the size of the packages and the speed of your internet connection.
+
+To install AlertToast using Swift Package Manager, follow the same process as installing Firebase. First, navigate to File > Swift Packages > Add Package Dependency. Then, enter the AlertToast GitHub repository URL: https://github.com/elai950/AlertToast.git.
+
 That's it! You're ready to build and run the app.
 
 
